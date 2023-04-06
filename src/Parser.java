@@ -1,6 +1,4 @@
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 import java.util.Stack;
 
 public class Parser {
@@ -8,6 +6,11 @@ public class Parser {
     private static final String OPENING_BRACKET = "(";
     private static final String CLOSING_BRACKET = ")";
 
+    /**
+     * Parses the broken expression and converts it to an AST tree
+     *
+     * @param parts fragmented expression
+     */
     public AstNode parse(List<String> parts) {
 
         Stack<String> operatorStack = new Stack<>();

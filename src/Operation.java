@@ -6,8 +6,8 @@ public enum Operation {
     MINUS("-", 2),
     PLUS("+", 2);
 
-    private String sign;
-    private int priority;
+    private final String sign;
+    private final int priority;
     Operation(String sign, int priority) {
         this.sign = sign;
         this.priority = priority;
