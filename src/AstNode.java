@@ -48,4 +48,8 @@ public class AstNode {
     public String toString() {
         return this.toString(new StringBuilder(), true, new StringBuilder()).toString();
     }
+
+    public boolean isLeaf() {
+        return left == null && right == null;
+    }
 }

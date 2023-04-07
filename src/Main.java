@@ -81,6 +81,6 @@ public class Main {
         Set<String> expressionVars = parts.stream()
                 .filter(p -> p.matches("^[A-Za-z].*"))
                 .collect(Collectors.toSet());
-        return variables.keySet().equals(expressionVars);
+        return variables.keySet().containsAll(expressionVars);
     }
 }
